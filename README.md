@@ -1,2 +1,2 @@
-# HackerRank_ProblemSolving
-Problem Solving algorithms from HackerRank (in Java)
+# HackerRank ProblemSolving
+__Problem Solving__ algorithms from *HackerRank* (in `Java`)
