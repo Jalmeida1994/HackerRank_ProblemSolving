@@ -4,15 +4,15 @@ import java.text.*;
 import java.util.*;
 import java.util.regex.*;
 
-// This solution passed all except 4 test cases, got to review this one
-
 public class Solution {
 
     /*
      * Complete the timeConversion function below.
      */
     static String timeConversion(String s) {
-        if(s.indexOf('P') >= 0){
+        if(s.indexOf('P') >= 0 && s.substring(0, 2).equals("12")){
+        }
+        else if(s.indexOf('P') >= 0){
             Integer n = Integer.parseInt(s.substring(0, 2));
             s = removeHour(s);
             n += 12;
@@ -20,8 +20,7 @@ public class Solution {
             s = hour + s;
         }
         else if (s.indexOf('A') >= 0 && s.substring(0, 2).equals("12")){
-          "00".substring(2);
-
+            s = "00" + s.substring(2);
         }
         return removeHourFormat(s);
     }
